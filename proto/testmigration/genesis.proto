@@ -1,0 +1,14 @@
+syntax = "proto3";
+package testmigration.testmigration;
+
+import "gogoproto/gogo.proto";
+import "testmigration/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "test-migration/x/testmigration/types";
+
+// GenesisState defines the testmigration module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package testmigration.testmigration;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "test-migration/x/testmigration/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
