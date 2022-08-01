@@ -3,10 +3,11 @@ package keeper
 import (
 	"context"
 
+	"test-migration/x/testmigration/types"
+
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	"test-migration/x/testmigration/types"
 )
 
 func (k Keeper) Params(c context.Context, req *types.QueryParamsRequest) (*types.QueryParamsResponse, error) {

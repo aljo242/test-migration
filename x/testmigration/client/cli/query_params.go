@@ -3,10 +3,11 @@ package cli
 import (
 	"context"
 
+	"test-migration/x/testmigration/types"
+
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
-	"test-migration/x/testmigration/types"
 )
 
 func CmdQueryParams() *cobra.Command {

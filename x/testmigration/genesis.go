@@ -1,9 +1,10 @@
 package testmigration
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
 	"test-migration/x/testmigration/keeper"
 	"test-migration/x/testmigration/types"
+
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

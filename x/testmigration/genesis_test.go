@@ -3,11 +3,12 @@ package testmigration_test
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	keepertest "test-migration/testutil/keeper"
 	"test-migration/testutil/nullify"
 	"test-migration/x/testmigration"
 	"test-migration/x/testmigration/types"
+
+	"github.com/stretchr/testify/require"
 )
 
 func TestGenesis(t *testing.T) {
